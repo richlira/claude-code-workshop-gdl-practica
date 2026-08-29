@@ -44,4 +44,4 @@ quedó versionado, invocable y con renta de contexto cero hasta usarse.
 ## Cierre
 
 Los tres archivos (hook, agent, skill) caben en un **plugin**: así se distribuye
-este toolbox a un equipo de 40. Slide 72 del deck.
+este toolbox a un equipo de 40. Slide 75 del deck.

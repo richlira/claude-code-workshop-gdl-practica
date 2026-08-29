@@ -28,7 +28,7 @@ El repo ya trae `/rubric-review` como ejemplo. Ahora la tuya:
 2. Revisa el archivo generado: frontmatter con name y description, cuerpo = playbook.
 3. Úsala al instante: `/release-notes`
 4. Bonus: ¿cuándo se cargó su cuerpo al contexto? (Pista: progressive disclosure,
-   slide 49 del deck.)
+   slide 52 del deck.)
 
 ## Ejercicio 3 (bonus) · Un subagent nuevo
 

@@ -16,7 +16,7 @@ Este es para los perfiles no-dev (o para que tú se lo enseñes a alguien no-dev
 **Compara con Code:** mismo motor agentic, pero aquí el resultado es un documento,
 no un diff. Nadie abrió una terminal.
 
-## El checklist (slide 80)
+## El checklist (slide 83)
 
 - ¿El resultado es un diff? → Code
 - ¿Es un documento? → Cowork

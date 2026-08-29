@@ -17,7 +17,7 @@ El repo trae `.claude/agents/explorador.md` con `model: haiku` y tools de lectur
 **Qué acabas de hacer:** lectura mecánica en el modelo barato (fan-out), juicio en
 el modelo grande (lead). El main no se ensució con los archivos leídos.
 
-## Las 5 caveman rules (slide 77)
+## Las 5 caveman rules (slide 80)
 
 1. Un modelo por sesión.
 2. Haiku para el fan-out, no para el lead.

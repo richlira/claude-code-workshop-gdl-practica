@@ -1,0 +1,10 @@
+[
+  {"id": "gdl-001", "titulo": "AI Engineer", "empresa": "Consultora Tapatía", "ciudad": "Guadalajara", "sueldo_mxn": 95000, "stack": ["python", "claude", "mcp"], "modalidad": "híbrido"},
+  {"id": "gdl-002", "titulo": "Forward Deployed Engineer", "empresa": "FinTech del Bajío", "ciudad": "Guadalajara", "sueldo_mxn": 110000, "stack": ["python", "agentes", "sql"], "modalidad": "presencial"},
+  {"id": "gdl-003", "titulo": "DevEx Engineer", "empresa": "Software House GDL", "ciudad": "Guadalajara", "sueldo_mxn": 88000, "stack": ["typescript", "ci", "claude code"], "modalidad": "remoto"},
+  {"id": "gdl-004", "titulo": "Data Scientist Sr", "empresa": "Retail Occidente", "ciudad": "Zapopan", "sueldo_mxn": 92000, "stack": ["python", "ml", "dbt"], "modalidad": "híbrido"},
+  {"id": "cdmx-001", "titulo": "Agent Platform Engineer", "empresa": "Banco Central de Datos", "ciudad": "CDMX", "sueldo_mxn": 130000, "stack": ["python", "mcp", "kubernetes"], "modalidad": "híbrido"},
+  {"id": "cdmx-002", "titulo": "MLOps Engineer", "empresa": "Aseguradora Digital", "ciudad": "CDMX", "sueldo_mxn": 105000, "stack": ["python", "vllm", "gpu"], "modalidad": "remoto"},
+  {"id": "mty-001", "titulo": "AI Solutions Architect", "empresa": "Manufactura Norte", "ciudad": "Monterrey", "sueldo_mxn": 125000, "stack": ["agentes", "edge", "ollama"], "modalidad": "presencial"},
+  {"id": "rem-001", "titulo": "Prompt... perdón, Context Engineer", "empresa": "Startup Remota", "ciudad": "Remoto LatAm", "sueldo_mxn": 99000, "stack": ["claude", "evals", "skills"], "modalidad": "remoto"}
+]

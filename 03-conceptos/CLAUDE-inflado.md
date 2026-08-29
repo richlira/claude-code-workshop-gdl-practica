@@ -1,0 +1,52 @@
+# CLAUDE.md del proyecto (versión inflada, para podar)
+
+## Reglas generales
+- Escribe código limpio y de alta calidad.
+- Sé profesional y cuidadoso.
+- Usa buenas prácticas de la industria.
+- Los tests se corren con `pytest -q`.
+- Piensa paso a paso antes de responder.
+- No borres archivos importantes.
+- El deploy es con `make deploy` (NUNCA a viernes en la tarde).
+- Usa Python 3.
+- Recuerda que el código debe funcionar.
+- Los montos de dinero van SIEMPRE en centavos, como enteros.
+- Formatea con black, línea máxima 100.
+- Sé conciso en tus respuestas.
+- No uses la librería `requests-old` (la reemplazamos en 2024).
+- IMPORTANTE: revisa dos veces antes de editar.
+- Las migraciones viven en `db/migrations/` y se numeran a mano.
+- No hagas commits sin que te lo pidan.
+- Evita bugs.
+- El endpoint de staging es https://staging.ejemplo.mx (ya no existe, ahora es interno).
+- Usa type hints en funciones públicas.
+- RECUERDA: el cliente se llama "cliente", no "customer", en todo el código.
+- Sé creativo pero no demasiado.
+- Los logs usan el logger de `core/log.py`, jamás print.
+- Este proyecto usa tabs. (ACTUALIZACIÓN 2025: ahora usa espacios.)
+- Contesta siempre en español.
+- No expongas secretos.
+- Las ramas se nombran tipo/descripcion-corta (feat/, fix/, chore/).
+- Ten mucho cuidado con el archivo de configuración.
+- Cuando agregues un endpoint, agrégalo también a la colección de Postman (deprecada, ahora usamos Bruno).
+- Si algo falla, intenta de nuevo.
+- La zona horaria del servidor es America/Mexico_City; guarda todo en UTC.
+- Haz preguntas si tienes dudas, pero no demasiadas.
+- El código de pagos es delicado, pon atención extra.
+- Usa nombres descriptivos para las variables.
+- Nunca uses `eval()`.
+- Los PRs necesitan al menos un approve antes de merge.
+- Acuérdate de lo que hablamos la vez pasada sobre el caché.
+- El README se actualiza cuando cambia el setup.
+- Optimiza solo cuando haya evidencia de que es lento.
+- Trata de que los tests pasen.
+- La versión de Node es la del .nvmrc. (Este proyecto ya no tiene frontend.)
+- Sigue los principios SOLID cuando aplique.
+- No reformatees archivos completos en PRs chicos.
+- IMPORTANTE IMPORTANTE: el flag --force de la CLI interna borra datos de verdad, JAMÁS lo uses.
+- Respeta la arquitectura existente.
+- Los cron jobs corren a las 3am, no programes migraciones a esa hora.
+- Piensa en el usuario final.
+- Cuando dudes entre dos soluciones, elige la más simple.
+- El equipo prefiere composición sobre herencia.
+- Haz tu mejor esfuerzo.

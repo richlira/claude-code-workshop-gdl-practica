@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La práctica · Claude Code Workshop · Guadalajara</title>
+<style>
+:root{--cr:#FAF9F5;--tc:#D97757;--ink:#141413;--sand:#E8E6DC;--sand2:#F0EEE6;--gray:#8F8C84;--gray2:#B0AEA5;
+--disp:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,'Helvetica Neue',sans-serif;--mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cr);color:var(--ink);font:18px/1.55 var(--disp);padding:0 0 80px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+header{padding:72px 0 44px;border-bottom:3px solid var(--ink)}
+.star{width:64px;height:64px;margin-bottom:30px;display:block}
+.eyebrow{font-family:var(--sans);font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--tc);margin-bottom:18px}
+h1{font-family:var(--disp);font-weight:500;font-size:clamp(38px,6vw,64px);line-height:1.04;letter-spacing:-.01em}
+.sub{font-family:var(--sans);font-size:15px;letter-spacing:.08em;color:var(--gray);margin-top:18px;text-transform:uppercase}
+.intro{font-size:21px;line-height:1.6;max-width:760px;margin:26px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{font-family:var(--mono);font-size:14px;background:var(--sand2);border:1px solid var(--sand);border-radius:10px;padding:7px 14px;color:var(--ink)}
+.aviso{background:#fff;border:1px solid var(--sand);border-left:5px solid var(--tc);border-radius:10px;padding:18px 22px;margin:36px 0 0;font-size:16.5px;line-height:1.55}
+.aviso b{color:var(--tc)}
+h2.sec{font-family:var(--sans);font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--tc);margin:56px 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--sand);border-radius:18px;padding:28px 26px;display:flex;flex-direction:column;gap:12px;transition:transform .12s ease,box-shadow .12s ease;color:inherit;text-decoration:none}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(20,20,19,.08)}
+.card .num{font-family:var(--disp);font-size:38px;color:var(--tc);line-height:1}
+.card .k{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gray)}
+.card h3{font-family:var(--disp);font-weight:500;font-size:26px;line-height:1.12}
+.card p{font-size:16.5px;line-height:1.5;color:var(--ink)}
+.card ul{list-style:none;margin-top:2px}
+.card li{font-size:15.5px;padding:7px 0 7px 20px;position:relative;border-top:1px solid var(--sand2);color:var(--ink)}
+.card li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;border-radius:50%;background:var(--tc)}
+.card .dir{font-family:var(--mono);font-size:13.5px;color:var(--tc);margin-top:auto;padding-top:12px}
+.card .t{font-family:var(--sans);font-size:12px;letter-spacing:.1em;color:var(--gray2);text-transform:uppercase}
+.card.hot{background:var(--tc);border-color:var(--tc)}
+.card.hot .num,.card.hot h3,.card.hot p,.card.hot li,.card.hot .dir{color:var(--cr)}
+.card.hot .k,.card.hot .t{color:var(--cr);opacity:.8}
+.card.hot li{border-top-color:rgba(250,249,245,.25)}
+.card.hot li::before{background:var(--cr)}
+footer{margin-top:72px;padding-top:30px;border-top:1px solid var(--sand);font-family:var(--sans);font-size:14px;color:var(--gray);line-height:1.7}
+footer b{color:var(--ink)}
+footer .links{letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin-top:10px}
+footer .links span{color:var(--tc)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <svg class="star" viewBox="0 0 100 100" aria-hidden="true">
+    <g stroke="#D97757" stroke-width="9" stroke-linecap="round">
+      <line x1="50" y1="6" x2="50" y2="94"/>
+      <line x1="6" y1="50" x2="94" y2="50"/>
+      <line x1="19" y1="19" x2="81" y2="81"/>
+      <line x1="81" y1="19" x2="19" y2="81"/>
+      <line x1="33" y1="9" x2="67" y2="91"/>
+      <line x1="91" y1="33" x2="9" y2="67"/>
+    </g>
+  </svg>
+  <p class="eyebrow">Claude Community · México</p>
+  <h1>Claude Code Workshop<br>La práctica</h1>
+  <p class="sub">Guadalajara · Wizeline · 29 ago 2026 · learn, build, demo</p>
+  <p class="intro">Nueve estaciones de práctica, en el mismo orden que el deck. Cada carpeta trae su README con pasos y resultado esperado. Empieza donde quieras; si es tu primera vez, ve en orden.</p>
+  <div class="chips">
+    <span class="chip">Claude Code + login</span>
+    <span class="chip">jq</span>
+    <span class="chip">Python 3.10+ (solo 05 y 06)</span>
+    <span class="chip">git</span>
+  </div>
+  <div class="aviso"><b>Antes de empezar:</b> al abrir <span style="font-family:var(--mono)">claude</span> en este repo acepta el trust del folder y revisa sus hooks (viven en <span style="font-family:var(--mono)">.claude/settings.json</span>): ese diálogo es parte de la lección 08. Todo lo &ldquo;sensible&rdquo; del repo (.env, keys, vacantes) es utilería falsa.</div>
+</header>
+
+<h2 class="sec">Las estaciones</h2>
+<div class="grid">
+
+  <a class="card" href="../03-conceptos/README.md">
+    <span class="num">03</span>
+    <span class="k">Conceptos · context engineering</span>
+    <h3>Poda tu CLAUDE.md</h3>
+    <p>El test &ldquo;would removing this cause mistakes?&rdquo; contra un archivo inflado de verdad.</p>
+    <ul>
+      <li>El test de poda, línea por línea · 10 min</li>
+      <li>/clear vs /compact, sentido en vivo · 5 min</li>
+    </ul>
+    <span class="dir">03-conceptos/</span>
+  </a>
+
+  <a class="card" href="../04-sdlc/README.md">
+    <span class="num">04</span>
+    <span class="k">El playbook · SDLC AI-native</span>
+    <h3>Artefactos que viajan</h3>
+    <p>intent → spec → plan → diff, commiteando el artefacto de cada etapa. Tú eres el gate.</p>
+    <ul>
+      <li>El pipeline completo con plan mode · 20 min</li>
+      <li>Bonus: separation of duties con el reviewer</li>
+    </ul>
+    <span class="dir">04-sdlc/</span>
+  </a>
+
+  <a class="card" href="../05-landscape/README.md">
+    <span class="num">05</span>
+    <span class="k">El landscape · Claude Agent SDK</span>
+    <h3>El harness, embebido</h3>
+    <p>El mismo harness de Claude Code como librería de Python, corriendo un agente tuyo.</p>
+    <ul>
+      <li>triage_agent.py con el Agent SDK · 15 min</li>
+      <li>Reto: pide un dynamic workflow</li>
+    </ul>
+    <span class="dir">05-landscape/</span>
+  </a>
+
+  <a class="card" href="../06-mcp/README.md">
+    <span class="num">06</span>
+    <span class="k">Proyectos · MCP</span>
+    <h3>Tu MCP server en 30 líneas</h3>
+    <p>FastMCP + un JSON de vacantes: dos tools funcionando y conectadas a tu Claude Code.</p>
+    <ul>
+      <li>Levanta y registra jobs_server.py · 15 min</li>
+      <li>Agrega tu tercera tool</li>
+    </ul>
+    <span class="dir">06-mcp/</span>
+  </a>
+
+  <a class="card" href="../07-primitivas/README.md">
+    <span class="num">07</span>
+    <span class="k">Primitivas · steering</span>
+    <h3>Rules y tu primera skill</h3>
+    <p>Una rule con scope por paths que se dispara sola, y una skill creada desde cero.</p>
+    <ul>
+      <li>Dispara la rule de pagos · 10 min</li>
+      <li>Crea /release-notes y úsala · 10 min</li>
+    </ul>
+    <span class="dir">07-primitivas/</span>
+  </a>
+
+  <a class="card hot" href="../08-practica/README.md">
+    <span class="num">08</span>
+    <span class="k">Práctica · las demos del taller</span>
+    <h3>Hook vs el flag peligroso</h3>
+    <p>Las 3 demos en vivo, en tu máquina: la pared que gana, el reviewer que no escribió el código, el rubric invocable.</p>
+    <ul>
+      <li>PreToolUse vs --dangerously-skip-permissions</li>
+      <li>@security-reviewer · /rubric-review</li>
+    </ul>
+    <span class="dir">08-practica/</span>
+  </a>
+
+  <a class="card" href="../09-economics/README.md">
+    <span class="num">09</span>
+    <span class="k">Token economics</span>
+    <h3>Fan-out barato</h3>
+    <p>Tres exploradores en haiku, contexto propio, y el juicio en el lead. Wall-clock manda.</p>
+    <ul>
+      <li>Fan-out con @explorador · 10 min</li>
+      <li>Las 5 caveman rules</li>
+    </ul>
+    <span class="dir">09-economics/</span>
+  </a>
+
+  <a class="card" href="../10-cowork/README.md">
+    <span class="num">10</span>
+    <span class="k">Code vs Cowork</span>
+    <h3>Sin terminal</h3>
+    <p>El mismo análisis de vacantes, pero el deliverable es un documento. Para los no-devs de tu vida.</p>
+    <ul>
+      <li>El análisis en Cowork · 10 min</li>
+      <li>El checklist de decisión</li>
+    </ul>
+    <span class="dir">10-cowork/</span>
+  </a>
+
+  <a class="card" href="../11-insights/README.md">
+    <span class="num">11</span>
+    <span class="k">Insights · para llevar</span>
+    <h3>El combo secreto</h3>
+    <p>isolation: worktree + model: haiku en un subagent refactorizador. Y verifica el insight 1 tú mismo.</p>
+    <ul>
+      <li>El refactorizador aislado · 15 min</li>
+      <li>Comprueba que el deny gana</li>
+    </ul>
+    <span class="dir">11-insights/</span>
+  </a>
+
+</div>
+
+<footer>
+  <p><b>¿Te sirvió?</b> La comunidad crece contigo: speaker, sede o sponsor. Búscanos.</p>
+  <p class="links">claudecommunity.mx <span>·</span> richlira.dev <span>·</span> próximo evento: 28 de octubre</p>
+  <p style="margin-top:14px">Proyecto de la Claude Community México, hecho para el workshop de Guadalajara. No es material oficial de Anthropic. Todo lo sensible del repo es utilería falsa. MIT.</p>
+</footer>
+
+</div>
+</body>
+</html>

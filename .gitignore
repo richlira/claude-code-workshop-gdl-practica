@@ -1,0 +1,16 @@
+# entornos y caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+pagos.db
+node_modules/
+
+# estado local de Claude Code (lo generan los ejercicios)
+.claude/settings.local.json
+.claude/worktrees/
+.claude/.worklog-*
+
+# el .env de apps/pagos SÍ se versiona: es utilería del ejercicio 08
+# (sus valores son falsos a propósito)
+!apps/pagos/.env

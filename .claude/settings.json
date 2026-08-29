@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Edit|Write|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -e '.tool_input | tostring | test(\"[.]env\")' >/dev/null && { echo 'Política del equipo: .env está fuera de alcance' >&2; exit 2; } || exit 0"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -e '.tool_input.command | test(\"rm -rf|[.]env\")' >/dev/null && { echo 'Política del equipo: rm -rf y .env bloqueados' >&2; exit 2; } || exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}
